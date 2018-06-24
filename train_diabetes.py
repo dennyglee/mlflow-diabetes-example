@@ -33,7 +33,8 @@ y = diabetes.target
 # Create pandas DataFrame for sklearn ElasticNet linear_model
 Y = np.array([y]).transpose()
 d = np.concatenate((X, Y), axis=1)
-cols = diabetes.feature_names + ['progression']
+#cols = diabetes.feature_names + ['progression']
+cols = ['age', 'sex', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6', 'progression']
 data = pd.DataFrame(d, columns=cols)
 
 
