@@ -8,3 +8,4 @@ dependencies:
   - matplotlib=2.2.2
   - pip:
     - mlflow
+    - cloudpickle
