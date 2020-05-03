@@ -8,7 +8,7 @@ Usage:
 python train_diabetes.py {alpha} {l1_ratio}
 
 # Execute a MLproject published on GitHub  (ensure you have installed conda)
-mlflow run git@github.com:dennyglee/mlflow-diabetes-example.git -P alpha=0.02 -P l1_ratio=0.05
+mlflow run https://github.com/dennyglee/mlflow-diabetes-example.git -P alpha=0.02 -P l1_ratio=0.05
 
 # Remote execution on Databricks 
 mlflow run -m databricks --cluster-spec cluster.json <uri>
